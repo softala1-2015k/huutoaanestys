@@ -2,16 +2,14 @@
 
 /**
  * @ngdoc function
- * @name huutoaanestysFrontApp.controller:AboutCtrl
+ * @name huutoaanestysFrontApp.controller:HopsCtrl
  * @description
- * # AboutCtrl
+ * # HopsCtrl
  * Controller of the huutoaanestysFrontApp
  */
 angular.module('huutoaanestysFrontApp')
   .controller('HopsCtrl', function ($scope) {
     $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
+
     ];
   });

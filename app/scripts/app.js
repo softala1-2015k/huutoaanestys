@@ -10,6 +10,7 @@
  */
 angular
   .module('huutoaanestysFrontApp', [
+    'ngAnimate',
     'ngRoute'
   ])
   .config(function ($routeProvider) {
