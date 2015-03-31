@@ -1,12 +1,8 @@
 # huutoaanestys-front
+Huutiksen frontti
 
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.11.1.
+## Devaus
 
-## Build & development
+Kaikki projektin oleellinen sisältö löytyy app kansiosta, älä välitä kansion juuressa olevista dotfileistä (jos termi ei ollut tuttu,
+kannattaa siihen tutustua).
 
-Run `grunt` for building and `grunt serve` for preview.
-
-## Testing
-
-Running `grunt test` will run the unit tests with karma.

@@ -8,7 +8,7 @@
  * Controller of the huutoaanestysFrontApp
  */
 angular.module('huutoaanestysFrontApp')
-  .controller('AboutCtrl', function ($scope) {
+  .controller('HopsCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',

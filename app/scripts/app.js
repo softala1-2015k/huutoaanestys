@@ -10,7 +10,6 @@
  */
 angular
   .module('huutoaanestysFrontApp', [
-    'ngAnimate',
     'ngRoute'
   ])
   .config(function ($routeProvider) {
@@ -19,9 +18,9 @@ angular
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
+      .when('/hops', {
+        templateUrl: 'views/hops.html',
+        controller: 'HopsCtrl'
       })
       .otherwise({
         redirectTo: '/'
