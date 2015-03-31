@@ -1,4 +1,4 @@
-# huutoaanestys-front
+# huutoaanestys_front
 Huutiksen frontti
 
 ## Devaus
