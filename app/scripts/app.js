@@ -23,6 +23,10 @@ angular
         templateUrl: 'views/hops.html',
         controller: 'HopsCtrl'
       })
+        .when('/json', {
+        templateUrl: 'views/json.html',
+        controller: 'JsonCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

@@ -1,0 +1,10 @@
+<div>
+    <h1>Kurssit</h1>
+    <span>Haku: <input ng-model="filter"></span>
+        <div ng-repeat="kurssi in kurssit | filter:filter">
+            <h2>{{ kurssi.nimi }}</h2>
+            <p>Tunnus: {{ kurssi.tunnus }}</p>
+            <p>Laajuus: {{ kurssi.laajuus }} op</p>
+            <p>Kuvaus: {{ kurssi.kuvaus }}</p>
+        </div>
+</div>

@@ -1,0 +1,17 @@
+[
+    {
+        "tunnus":"ICT2TN007",
+        "nimi":"Ohjelmistokehitys",
+        "koulutusohjelma_ID":1,
+        "laajuus":12,
+        "ajoitus":3,
+        "kuvaus":"Java ohjelmistokehitystä projektiryhmässä"},
+    {
+        "tunnus":"ICT2TN009",
+        "nimi":"Tietohallinto",
+        "koulutusohjelma_ID":1,
+        "laajuus":3,
+        "ajoitus":4,
+        "kuvaus":"Tietohallinnon perusteet"
+    }
+]
