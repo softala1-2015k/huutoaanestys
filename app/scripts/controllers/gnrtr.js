@@ -8,30 +8,12 @@
  * Controller of the huutoaanestysFrontApp
  */
 angular.module('huutoaanestysFrontApp')
-  .controller('GnrtrCtrl', function ($scope) {
+  .controller('GnrtrCtrl', function ($scope, $http) {
+    $http.get('json/kurssit.json')
+      .success(function(data) { //success returns a JS object
+        $scope.kurssit = data; // bind the JS object to $scope
+  });
+
   $scope.oneAtATime = true;
-
-  $scope.groups = [
-    {
-      title: 'Dynamic Group Header - 1',
-      content: 'Dynamic Group Body - 1'
-    },
-    {
-      title: 'Dynamic Group Header - 2',
-      content: 'Dynamic Group Body - 2'
-    }
-  ];
-
-  $scope.items = ['Item 1', 'Item 2', 'Item 3'];
-
-  $scope.addItem = function() {
-    var newItemNo = $scope.items.length + 1;
-    $scope.items.push('Item ' + newItemNo);
-  };
-
-  $scope.status = {
-    isFirstOpen: true,
-    isFirstDisabled: false
-  };
 
 });
