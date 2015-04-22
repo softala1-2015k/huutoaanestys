@@ -2,9 +2,9 @@
 
 /**
  * @ngdoc function
- * @name huutoaanestysFrontApp.controller:MainCtrl
+ * @name huutoaanestysFrontApp.controller:GnrtrCtrl
  * @description
- * # MainCtrl
+ * # GnrtrCtrl
  * Controller of the huutoaanestysFrontApp
  */
 angular.module('huutoaanestysFrontApp')

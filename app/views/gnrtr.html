@@ -1,12 +1,13 @@
 <div ng-controller="GnrtrCtrl">
 
   <accordion close-others="oneAtATime">
-    <div class="col-xs-12" ng-repeat=" kurssi in kurssit">
+    <div class="col-xs-12" ng-repeat="kurssi in kurssit">
       <accordion-group is-open="status.open">
         <accordion-heading>
           {{ kurssi.nimi }} <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
         </accordion-heading>
-        Tunnus: {{ kurssi.tunnus }}
+        <p>Tunnus: {{ kurssi.tunnus }}</p>
+        <p>Kuvaus: {{ kurssi.kuvaus }}</p>
       </accordion-group>
     </div>
   </accordion>
