@@ -1,17 +1,28 @@
 <section class="generaattori" ng-controller="GeneraattoriCtrl">
-  <accordion close-others="oneAtATime">
-  	
-    <div ng-repeat="kurssi in kurssit">
-    	<div class="generaattori--item col-xs-12 col-md-6">
-    	  <accordion-group is-open="status.open">
-    	    <accordion-heading>{{ kurssi.nimi }}<i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i></accordion-heading>
-    	    <ul class="generaattori--item item">
-    	    	<li>Tunnus: {{ kurssi.tunnus }}</li>
-    	    	<li>Ajoitus: {{ kurssi.ajoitus }}</li>
-    	    </ul>
-    	  </accordion-group>
-    	</div>
-    </div>
-    
-  </accordion>
+	
+	<header class="generaattori--header">
+		<div class="heading"><h2>Syyslukukausi 2015</h2></div>
+		<div class="back text">20.8.2015-25.10.2015</div>
+		<div class="forward text">1.11.2015-22.12.2015</div>
+		<div class="back icon"><i class="glyphicon glyphicon-chevron-left"></i></div>
+		<div class="forward icon"><i class="glyphicon glyphicon-chevron-right"></i></div>
+	</header>
+	
+	
+	<accordion close-others="oneAtATime">
+		<div ng-repeat="kurssi in kurssit">
+			<div class="generaattori--item col-xs-12">
+				<accordion-group is-open="status.open">
+					<accordion-heading>{{ kurssi.nimi }}<i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i></accordion-heading>
+					<ul class="generaattori--item item">
+						<li class="media-item"></li>
+						<li>Tunnus: {{ kurssi.tunnus }}</li>
+						<li>Ajoitus: {{ kurssi.ajoitus }}</li>
+						<li>Ajankohta: {{ kurssi.ajankohta }}</li>
+					</ul>
+				</accordion-group>
+			</div>
+		</div>
+	</accordion>
+	
 </section>
