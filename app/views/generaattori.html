@@ -1,0 +1,17 @@
+<section class="generaattori" ng-controller="GeneraattoriCtrl">
+  <accordion close-others="oneAtATime">
+  	
+    <div ng-repeat="kurssi in kurssit">
+    	<div class="generaattori--item col-xs-12 col-md-6">
+    	  <accordion-group is-open="status.open">
+    	    <accordion-heading>{{ kurssi.nimi }}<i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i></accordion-heading>
+    	    <ul class="generaattori--item item">
+    	    	<li>Tunnus: {{ kurssi.tunnus }}</li>
+    	    	<li>Ajoitus: {{ kurssi.ajoitus }}</li>
+    	    </ul>
+    	  </accordion-group>
+    	</div>
+    </div>
+    
+  </accordion>
+</section>

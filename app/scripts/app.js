@@ -23,9 +23,9 @@ angular
         templateUrl: 'views/hops.html',
         controller: 'HopsCtrl'
       })
-      .when('/gnrtr', {
-        templateUrl: 'views/gnrtr.html',
-        controller: 'GnrtrCtrl'
+      .when('/generaattori', {
+        templateUrl: 'views/generaattori.html',
+        controller: 'GeneraattoriCtrl'
       })
       .when('/json', {
         templateUrl: 'views/json.html',

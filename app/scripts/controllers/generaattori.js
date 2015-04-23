@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name huutoaanestysFrontApp.controller:MainCtrl
+ * @name huutoaanestysFrontApp.controller: GeneraattoriCtrl
  * @description
- * # MainCtrl
+ * # GeneraattoriCtrl
  * Controller of the huutoaanestysFrontApp
  */
 angular.module('huutoaanestysFrontApp')
-  .controller('GnrtrCtrl', function ($scope, $http) {
+  .controller('GeneraattoriCtrl', function ($scope, $http) {
     $http.get('json/kurssit.json')
       .success(function(data) { //success returns a JS object
         $scope.kurssit = data; // bind the JS object to $scope
