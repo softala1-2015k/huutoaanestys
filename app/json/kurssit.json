@@ -6,6 +6,7 @@
         "laajuus":12,
         "ajoitus":3,
         "kesto":1,
+        "aloitus_periodi":4,
         "ajankohta":"31.8.2015 - 25.10.2015",
         "kuvaus":"Java ohjelmistokehitystä projektiryhmässä"
 	},
@@ -16,6 +17,7 @@
         "laajuus":3,
         "ajoitus":4,
         "kesto":1,
+        "aloitus_periodi":4,
         "ajankohta":"31.8.2015 - 25.10.2015",
         "kuvaus":"Tietohallinnon perusteet"
     },{
@@ -25,6 +27,7 @@
         "laajuus":3,
         "ajoitus":4,
         "kesto":2,
+        "aloitus_periodi":4,
         "ajankohta":"31.8.2015 - 25.12.2015",
         "kuvaus":"Tietohallinnon perusteet"
     }

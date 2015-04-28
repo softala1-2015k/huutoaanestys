@@ -2,18 +2,16 @@
  * Generaattori content box
  **/
 .generaattori {
-	line-height: 2;
+	max-width: 992px;
+	margin: auto;
 	padding: 2em 0.5em;
-	background-image: linear-gradient(to bottom, #ececec 2em, rgba(0,0,0,0.25) 1px);
-	background-size: 100% 2em;
-	background-position: 0 1em;
+	background-image: linear-gradient(to bottom, #f9f9f9 31px, rgba(0,0,0,0.2) 1px);
+	background-position: 0 16px;
+	background-size: 100% 32px;
 	background-origin: content-box;
+	line-height: 2;
 	overflow: hidden;
 	box-shadow: 0 2px 2px 2px rgba(0,0,0,0.075);
-}
-
-.generaattori--wrapper {
-	width: 100%;
 }
 
 .generaattori--header {
@@ -54,6 +52,13 @@
 	text-align: center;
 }
 
+.generaattori--header > .back.icon a, 
+.generaattori--header > .forward.icon a {
+	display: block;
+	width: 100%;
+	color: white;
+}
+
 .generaattori--header > .back.icon {
 	order: 0;
 }
@@ -68,11 +73,17 @@
 }
 
 .generaattori--item {
-	padding: 0;
+	padding: 0;;
 }
 
-.generaattori--item .panel-default > .panel-heading {
+.generaattori--item .panel-heading {
 	background: white;
+	color: #3498db;
+	text-transform: uppercase;
+}
+
+.generaattori--item .panel-title {
+	font-size: 125%;
 }
 
 .generaattori--item .panel-title > a:hover {
@@ -84,21 +95,30 @@
  * Kurssi
  **/
 .generaattori--item.item {
-	list-style: none;
 	padding: 1.5em 0 0;
+	list-style: none;
+}
+
+.generaattori--item.item > .media-item { 
+	display: none;
 }
 
 @media (min-width: 480px) {
 	.generaattori--item.item > .media-item {
+		display: block;
 		float: left;
-		width:  65px;
-		height: 65px;
-		border: 1px solid rgba(0,0,0,0.1);
+		width:  55px;
+		height: 55px;
+		color: #3498db;
+		font-size: 150%;
+		text-align: center;
+		line-height: 55px;
+		border: 2px solid #3498db;
 		border-radius: 50%;
 	}
 	
 	.generaattori--item.item li:nth-child(n+2) {
-		margin-top: -10px;
+		margin-top: -8px;
 		text-indent: 1em;
 	}
 }
@@ -141,9 +161,7 @@
 	
 	.generaattori--header > .back.icon,
 	.generaattori--header > .forward.icon {
-		font-size: 100%; 
-		border: 1px solid white;
-		border-radius: 50%;
+		font-size: 125%; 
 	}
 
 	
