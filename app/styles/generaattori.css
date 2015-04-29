@@ -1,21 +1,20 @@
 /** 
  * Generaattori content box
- **/
+ */
 .generaattori {
-	max-width: 992px;
-	margin: auto;
-	padding: 2em 0.5em;
+	max-width: 1170px;
+	margin: 0 auto 4em;
+	padding: 0 0 2em;
 	background-image: linear-gradient(to bottom, #f9f9f9 31px, rgba(0,0,0,0.2) 1px);
 	background-position: 0 16px;
 	background-size: 100% 32px;
 	background-origin: content-box;
 	line-height: 2;
 	overflow: hidden;
-	box-shadow: 0 2px 2px 2px rgba(0,0,0,0.075);
+	box-shadow: 0 2px 2px 2px rgba(0,0,0,0.125);
 }
 
 .generaattori--header {
-	margin: 0 auto 2em;
 	padding: 1em 0;
 	background: #83c669;
 	color: white;
@@ -24,7 +23,7 @@
 	align-items: baseline;
 }
 
-.generaattori--header div {
+.generaattori--header .flex-item {
 	-webkit-flex-direction: row;
 	flex-direction: row;
 }
@@ -35,8 +34,8 @@
 	text-align: center;
 }
 
-.generaattori--header > .heading > h2 {
-	font-size: 115%;	
+.generaattori--header > .heading > .title {
+	font-size: 125%;	
 }
 
 .generaattori--header > .back.text, 
@@ -129,7 +128,7 @@
  **/
 @media (min-width: 992px) {
 	.generaattori--header {
-		padding: 1.2em 0;
+		padding: 1.8em 0;
 	}
 	
 	.generaattori--header > .heading {
@@ -138,8 +137,8 @@
 		text-align: center;
 	}
 	
-	.generaattori--header > .heading > h2 {
-		font-size: 175%;
+	.generaattori--header > .heading > .title {
+		font-size: 195%;
 	}
 		
 		
