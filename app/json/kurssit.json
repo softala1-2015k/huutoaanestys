@@ -1,0 +1,34 @@
+[
+    {
+        "tunnus":"ICT2TN007",
+        "nimi":"Ohjelmistokehitys",
+        "koulutusohjelma_ID":1,
+        "laajuus":12,
+        "ajoitus":3,
+        "kesto":1,
+        "aloitus_periodi":4,
+        "ajankohta":"31.8.2015 - 25.10.2015",
+        "kuvaus":"Java ohjelmistokehitystä projektiryhmässä"
+	},
+    {
+        "tunnus":"ICT2TN009",
+        "nimi":"Tietohallinto",
+        "koulutusohjelma_ID":1,
+        "laajuus":3,
+        "ajoitus":4,
+        "kesto":1,
+        "aloitus_periodi":4,
+        "ajankohta":"31.8.2015 - 25.10.2015",
+        "kuvaus":"Tietohallinnon perusteet"
+    },{
+        "tunnus":"SWD04TN02-12",
+        "nimi":"Softala 1",
+        "koulutusohjelma_ID":1,
+        "laajuus":3,
+        "ajoitus":4,
+        "kesto":2,
+        "aloitus_periodi":4,
+        "ajankohta":"31.8.2015 - 25.12.2015",
+        "kuvaus":"Tietohallinnon perusteet"
+    }
+]

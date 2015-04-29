@@ -10,8 +10,8 @@
  */
 angular
   .module('huutoaanestysFrontApp', [
-    'ngAnimate',
-    'ngRoute'
+    'ngRoute',
+    'ui.bootstrap'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -22,6 +22,14 @@ angular
       .when('/hops', {
         templateUrl: 'views/hops.html',
         controller: 'HopsCtrl'
+      })
+      .when('/generaattori', {
+        templateUrl: 'views/generaattori.html',
+        controller: 'GeneraattoriCtrl'
+      })
+      .when('/json', {
+        templateUrl: 'views/json.html',
+        controller: 'JsonCtrl'
       })
       .otherwise({
         redirectTo: '/'
