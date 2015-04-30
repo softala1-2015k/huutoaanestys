@@ -20,7 +20,7 @@
 					
 						<div class="generaattori--item">
 							<div ng-switch-when="1" class="col-xs-12 col-sm-6 clearfix">
-								<accordion-group is-open="true">
+								<accordion-group is-open="isOpen">
 									<accordion-heading>{{ kurssi.nimi }}<i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i></accordion-heading>
 										<ul class="generaattori--item item">
 											<li class="media-item"><i class="glyphicon glyphicon-erase"></i></li>
@@ -32,7 +32,7 @@
 							</div>
 				
 							<div ng-switch-when="2" class="col-xs-12 col-sm-12 clearfix">
-								<accordion-group is-open="true"> 
+								<accordion-group is-open="isOpen"> 
 									<accordion-heading>{{ kurssi.nimi }}<i class="pull-right glyphicon"	ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i></accordion-heading>
 										<ul class="generaattori--item item">
 											<li class="media-item"><i class="glyphicon glyphicon-erase"></i></li>
