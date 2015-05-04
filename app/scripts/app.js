@@ -27,9 +27,13 @@ angular
         templateUrl: 'views/generaattori.html',
         controller: 'GeneraattoriCtrl'
       })
-      .when('/json', {
+      .when('/kurssihaku', {
         templateUrl: 'views/kurssihaku.html',
         controller: 'KurssihakuCtrl'
+      })
+      .when('/ilmoittautuminen', {
+    	templateUrl: 'views/ilmoittautuminen.html',
+    	controller: 'IlmoittautuminenCtrl'
       })
       .otherwise({
         redirectTo: '/'

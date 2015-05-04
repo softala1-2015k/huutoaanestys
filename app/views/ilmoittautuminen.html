@@ -1,0 +1,94 @@
+<section class="ilmo">
+
+
+
+	
+		<h1>
+	ilmoittautuminen sivu.
+	</h1>
+
+		<div class="col-md-3">
+			<ul class="ostoskori">
+				<li  ng-repeat="kurssi in toteutukset">
+					<a href="#ilmo">{{ kurssi.kurssinNimi }}</a>
+					<form action="" method="post">
+						<ul class="sublista">
+							<li class="sublink" ng-repeat="toteutus in kurssi.toteutus">
+								<input type="radio" name="valikko" value=""
+								 />
+								 {{ toteutus.nimi }}
+								
+							</li>	
+						</ul>
+					</form>
+				</li>
+				
+			</ul>
+		</div>
+		
+		
+		
+		
+		<div class="col-md-8 col-md-offset-1">
+			<table class="table table-bordered">
+				<caption>Lukkari</caption>
+					<thead>
+						<tr>
+							<td id="aika">Aika</td>
+							<td id="mon">Mon</td>
+							<td id="tue">Tue</td>
+							<td id="wen">Wen</td>
+							<td id="thu">Thu</td>
+							<td id="fri">Fri</td>
+							<td id="str">Str</td>
+							<td id="sun">Sun</td>
+						</tr>
+					</thead>
+					<tbody>
+					<tr><td>08:00-08:45</td>
+						<td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+					</tr>
+					<tr><td>09:00-09:45</td>
+						<td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+					</tr>
+					<tr><td>10:00-10:45</td>
+						<td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+					</tr>
+					<tr><td>11:00-11:45</td>
+						<td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+					</tr>
+					<tr><td>12:00-12:45</td>
+						<td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+					</tr>
+					<tr><td>13:00-13:45</td>
+						<td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+					</tr>
+					<tr><td>14:00-14:45</td>
+						<td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+					</tr>
+					<tr><td>15:00-15:45</td>
+						<td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+					</tr>
+					<tr><td>16:00-16:45</td>
+						<td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+					</tr>
+					<tr><td>17:00-17:45</td>
+						<td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+					</tr>
+					<tr><td>18:00-18:45</td>
+						<td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+					</tr>
+					<tr><td>19:00-19:45</td>
+						<td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+					</tr>
+					<tr><td>20:00-20:45</td>
+						<td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+					</tr>
+					</tbody>
+			</table>
+		</div>
+
+	
+		
+	
+</section>
