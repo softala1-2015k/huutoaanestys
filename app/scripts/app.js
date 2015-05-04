@@ -28,8 +28,8 @@ angular
         controller: 'GeneraattoriCtrl'
       })
       .when('/json', {
-        templateUrl: 'views/json.html',
-        controller: 'JsonCtrl'
+        templateUrl: 'views/kurssihaku.html',
+        controller: 'KurssihakuCtrl'
       })
       .otherwise({
         redirectTo: '/'
