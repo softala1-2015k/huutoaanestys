@@ -1,0 +1,14 @@
+.carousel {
+  height: 100px;
+  margin-bottom: 60px;
+}
+
+.carousel-caption {
+	color:black;
+  z-index: 10;
+}
+
+.carousel .item {
+  height: 100px;
+  background-color: #E6E6E6;
+}
