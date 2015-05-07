@@ -18,7 +18,7 @@ angular.module('huutoaanestysFrontApp')
   
   $scope.$watch(function(){
     if($window.innerWidth > maxWidth) {
-      $scope.isOpen = true;
+      $scope.isOpen = false;
     }
     else {
       $scope.isOpen = false;

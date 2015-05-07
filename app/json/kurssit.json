@@ -9,8 +9,7 @@
         "aloitus_periodi":4,
         "ajankohta":"31.8.2015 - 25.10.2015",
         "kuvaus":"Java ohjelmistokehitystä projektiryhmässä"
-	},
-    {
+    },{
         "tunnus":"ICT2TN009",
         "nimi":"Tietohallinto",
         "koulutusohjelma_ID":1,
@@ -21,8 +20,38 @@
         "ajankohta":"31.8.2015 - 25.10.2015",
         "kuvaus":"Tietohallinnon perusteet"
     },{
+        "tunnus":"ICT2TN010",
+        "nimi":"Hypermedia",
+        "koulutusohjelma_ID":1,
+        "laajuus":3,
+        "ajoitus":4,
+        "kesto":1,
+        "aloitus_periodi":4,
+        "ajankohta":"31.8.2015 - 25.10.2015",
+        "kuvaus":"Tiukka flash-peli"
+    },{
+        "tunnus":"ICT2TN011",
+        "nimi":"Transaktionhallinta",
+        "koulutusohjelma_ID":1,
+        "laajuus":3,
+        "ajoitus":4,
+        "kesto":1,
+        "aloitus_periodi":4,
+        "ajankohta":"31.8.2015 - 25.10.2015",
+        "kuvaus":"Tietohallinnon perusteet"
+    },{
         "tunnus":"SWD04TN02-12",
         "nimi":"Softala 1",
+        "koulutusohjelma_ID":1,
+        "laajuus":3,
+        "ajoitus":4,
+        "kesto":2,
+        "aloitus_periodi":4,
+        "ajankohta":"31.8.2015 - 25.12.2015",
+        "kuvaus":"Tietohallinnon perusteet"
+    },{
+        "tunnus":"ICT02TN11-30",
+        "nimi":"Tietotekninen selvitys ja kouluttaminen",
         "koulutusohjelma_ID":1,
         "laajuus":3,
         "ajoitus":4,
