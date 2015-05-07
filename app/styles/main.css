@@ -34,7 +34,8 @@ body {
 .footer {
   padding-top: 19px;
   color: #777;
-  border-top: 1px solid #e5e5e5;
+  
+
 }
 
 .container-narrow > hr {
@@ -68,6 +69,10 @@ body {
   .footer {
     padding-left: 0;
     padding-right: 0;
+  }
+  
+  .footer{
+    margin-left:250px;
   }
   
   /* Space out the masthead */

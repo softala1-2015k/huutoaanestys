@@ -43,7 +43,7 @@ html{}
 
     margin-left: -250px;
     overflow-y: auto;
-    background: #B9D4F0;
+    background: #f8f8f8;
     text-decoration: none;
     border-right: 1px solid #999999;
     -webkit-transition: all 0.5s ease;
@@ -123,15 +123,18 @@ overflow:hidden;
     background: none;
 }
 
-#content1{background-color:#F8F8F8; border: 1px solid gray; height:100px; margin:10px; }
-#content2{background-color:#F8F8F8; border: 1px solid gray; height:100px; margin:10px; }
-#content3{background-color:#F8F8F8; border: 1px solid gray; height:100px; margin:10px; }
+#content1{background-color:#F8F8F8; border: 1px solid gray; min-height:100px; margin:10px; }
+#content2{background-color:#F8F8F8; border: 1px solid gray; min-height:100px; margin:10px; }
+#content3{background-color:#F8F8F8; border: 1px solid gray; min-height:100px; margin:10px; }
 
 
 
 
 
 @media(min-width:768px) { /* Tapahtuu kun leveys suurempi kuin 768px */
+
+	#content3{background-color:#F8F8F8; border: 1px solid gray; min-height:100px; margin:10px 0px 0px 85px; }
+	
 	
 	.menu-icon{display:none;}
 	

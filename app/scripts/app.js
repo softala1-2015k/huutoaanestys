@@ -31,7 +31,7 @@ angular
         templateUrl: 'views/json.html',
         controller: 'JsonCtrl'
       })
-      //.otherwise({
-        //redirectTo: '/'
-      //});
+      .otherwise({
+        redirectTo: '/'
+      });
   });
