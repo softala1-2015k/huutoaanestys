@@ -18,4 +18,3 @@ angular.module('huutoaanestysFrontApp')
 			  console.log('Virhe: main.opiskelija ' + error);
 			  });	  
 	  });
-

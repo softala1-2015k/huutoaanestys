@@ -1,10 +1,29 @@
 <div>
     <h1>Kurssit</h1>
-    <span>Haku: <input ng-model="filter"></span>
-        <div ng-repeat="kurssi in kurssit | filter:filter">
+    <p>Hakusana: <input ng-model="haku"> Koutusohjelma: 
+
+     <select name="koulutusohjelma" ng-model="koulutusohjelma" ng-options="koulutusohjelma_tunnus for koulutusohjelma_tunnus in koulutusohjelmat">
+       <option value="">KAIKKI</option> 
+		
+    </select>
+    <p>Lis&auml;&auml; kurssi:</p>
+    
+        <p ng-repeat="kurssi in kurssit | filter:haku|filter:koulutusohjelma">
+            
+            <button>
+            {{ kurssi.tunnus }}
+            </button>
+            {{ kurssi.nimi }}
+            {{ kurssi.laajuus }} op
+            {{ kurssi.koulutusohjelma_tunnus }}
+            {{ kurssi.kuvaus }}
+           
+          
+            <!--  
             <h2>{{ kurssi.nimi }}</h2>
             <p>Tunnus: {{ kurssi.tunnus }}</p>
             <p>Laajuus: {{ kurssi.laajuus }} op</p>
             <p>Kuvaus: {{ kurssi.kuvaus }}</p>
-        </div>
-</div>
+            -->
+       
+</p>
