@@ -1,4 +1,5 @@
-<div>
+<meta charset="utf-8">
+<div class="container">
     <h1>Kurssit</h1>
     <p>Hakusana: <input ng-model="haku"> Koutusohjelma: 
 
@@ -6,24 +7,43 @@
        <option value="">KAIKKI</option> 
 		
     </select>
-    <p>Lis&auml;&auml; kurssi:</p>
-    
-        <p ng-repeat="kurssi in kurssit | filter:haku|filter:koulutusohjelma">
-            
-            <button>
-            {{ kurssi.tunnus }}
-            </button>
-            {{ kurssi.nimi }}
-            {{ kurssi.laajuus }} op
-            {{ kurssi.koulutusohjelma_tunnus }}
-            {{ kurssi.kuvaus }}
-           
-          
-            <!--  
-            <h2>{{ kurssi.nimi }}</h2>
-            <p>Tunnus: {{ kurssi.tunnus }}</p>
-            <p>Laajuus: {{ kurssi.laajuus }} op</p>
-            <p>Kuvaus: {{ kurssi.kuvaus }}</p>
-            -->
-       
-</p>
+    <div ng-show="lisaa">
+     <div ng-show="(kurssit!=null&&(!kurssit.length==0))&&(kurssit | filter:haku|filter:koulutusohjelma).length">
+      
+	    <table class="table table-striped">
+	    	<thead>
+    			<tr>
+			      <th>Lisää kurssi</th>
+			      <th>Nimi</th>
+			      <th>Laajuus</th>
+			      <th>Koulutusohjelma</th>
+			      <th>Kuvaus</th>
+   		 		</tr>
+  			</thead>
+  			<tbody>
+		        <tr ng-repeat="kurssi in kurssit | filter:haku|filter:koulutusohjelma">
+			        	<td><button type="button" class="btn btn-success btn-md" >
+				            {{ kurssi.tunnus }}
+				            </button></td>
+			           <td>{{ kurssi.nimi }}</td>
+			           <td> {{ kurssi.laajuus }} op</td>
+			           <td> {{ kurssi.koulutusohjelma}}</td>
+			           <td> {{ kurssi.kuvaus }}</td>
+	
+		            <!--  
+		            <h2>{{ kurssi.nimi }}</h2>
+		            <p>Tunnus: {{ kurssi.tunnus }}</p>
+		            <p>Laajuus: {{ kurssi.laajuus }} op</p>
+		            <p>Kuvaus: {{ kurssi.kuvaus }}</p>
+		            -->
+				</tr>
+			</tbody>
+		</table>
+		</div>
+		</div>
+		<div ng-show="(kurssit!=null&&(!kurssit.length==0))&&((kurssit | filter:haku|filter:koulutusohjelma).length==0)">
+			<p class="thaku">Ei hakuehtoja vastaavia kursseja</p>
+		</div>
+		
+		 <span>{{virhe}}</span>
+	</div>

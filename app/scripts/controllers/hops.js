@@ -23,5 +23,5 @@ angular.module('huutoaanestysFrontApp')
   })
   .error(function(error) {
 		  console.log('Virhe: hops.opiskelijat ' + error);
-		  });	  
-  });
+		  });
+});

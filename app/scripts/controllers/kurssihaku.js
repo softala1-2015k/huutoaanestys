@@ -10,10 +10,19 @@
 angular.module('huutoaanestysFrontApp')
   .controller('KurssihakuCtrl', function ($scope, $http) {
 	  
-	   $http.get('http://proto317.haaga-helia.fi:8080/huutoaanestys_back/kurssit.json')
+	  $http.get('json/kurssit.json')
       .success(function(data) { //success returns a JS object
         $scope.kurssit = data; // bind the JS object to $scope
-	  
+        
+        $scope.virhe= "";
+        $scope.lisaa=true;
+       if(data == null || data.length==0){
+    	   $scope.lisaa=false;
+    	   $scope.virhe="Tietokantayhteydessä ongelma";
+       }
+ /*
+	  var data=null;
+	  $scope.kurssit=data;
 	  /*
 	  $http.get('json/kurssit.json')
       .success(function(data) { //success returns a JS object
@@ -30,4 +39,5 @@ angular.module('huutoaanestysFrontApp')
     
 		
       });
-});
+  });
+
