@@ -4,32 +4,37 @@
 
 	
 		<h1>
-	ilmoittautuminen sivu.
+	Ilmoittautuminen
 	</h1>
+	
+		<div class="col-md-2">
+			<div class="ostoskori">
 
-		<div class="col-md-3">
-			<ul class="ostoskori">
-				<li  ng-repeat="kurssi in toteutukset">
-					<a href="#ilmo">{{ kurssi.kurssinNimi }}</a>
-					<form action="" method="post">
-						<ul class="sublista">
-							<li class="sublink" ng-repeat="toteutus in kurssi.toteutus">
-								<input type="radio" name="valikko" value=""
-								 />
-								 {{ toteutus.nimi }}
-								
-							</li>	
-						</ul>
-					</form>
-				</li>
+				<div ng-repeat="kurssi in toteutukset">
+			<h4>{{ kurssi.kurssinNimi }}</h4>
 				
-			</ul>
+						<div class="row">
+							<div class="col-lg-6">
+							
+							<div class="input-group" ng-repeat="n in kurssi.toteutus">
+							<span class="input-group-addon">
+							
+								<input type="radio" name="{{ n.nimi }}" value=" {{n.lisatiedot}}" ng-model="formData.radio"/>
+								 {{ n.nimi }}
+								 </span>
+							</div>			
+						</div>
+				</div>
+				</div>
+	
+			</div>
 		</div>
 		
+
 		
 		
 		
-		<div class="col-md-8 col-md-offset-1">
+		<div class="col-md-9 col-md-offset-1">
 			<table class="table table-bordered">
 				<caption>Lukkari</caption>
 					<thead>
@@ -46,10 +51,10 @@
 					</thead>
 					<tbody>
 					<tr><td>08:00-08:45</td>
-						<td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+						<td ng-class=" {'toteutus': formData.radio == '1' } "></td><td ng-class=" {'toteutus': formData.radio == '4' } "></td><td></td><td></td><td></td><td></td><td></td>
 					</tr>
 					<tr><td>09:00-09:45</td>
-						<td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+						<td ng-class=" {'toteutus': formData.radio == '1' } "></td><td></td><td></td><td></td><td></td><td></td><td></td>
 					</tr>
 					<tr><td>10:00-10:45</td>
 						<td></td><td></td><td></td><td></td><td></td><td></td><td></td>
@@ -58,10 +63,10 @@
 						<td></td><td></td><td></td><td></td><td></td><td></td><td></td>
 					</tr>
 					<tr><td>12:00-12:45</td>
-						<td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+						<td></td><td></td><td ng-class=" {'toteutus': formData.radio == '2' } "></td><td></td><td></td><td></td><td></td>
 					</tr>
 					<tr><td>13:00-13:45</td>
-						<td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+						<td></td><td></td><td ng-class=" {'toteutus': formData.radio == '2' } "></td><td></td><td></td><td></td><td></td>
 					</tr>
 					<tr><td>14:00-14:45</td>
 						<td></td><td></td><td></td><td></td><td></td><td></td><td></td>
@@ -70,10 +75,10 @@
 						<td></td><td></td><td></td><td></td><td></td><td></td><td></td>
 					</tr>
 					<tr><td>16:00-16:45</td>
-						<td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+						<td></td><td></td><td></td><td ng-class=" {'toteutus': formData.radio == '3' } "></td><td></td><td></td><td></td>
 					</tr>
 					<tr><td>17:00-17:45</td>
-						<td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+						<td></td><td></td><td></td><td ng-class=" {'toteutus': formData.radio == '3' } "></td><td></td><td></td><td></td>
 					</tr>
 					<tr><td>18:00-18:45</td>
 						<td></td><td></td><td></td><td></td><td></td><td></td><td></td>

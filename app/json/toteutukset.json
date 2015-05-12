@@ -1,7 +1,7 @@
 [
     {
         "id": "1",
-        "kurssinNimi": "Kurssin Softala-1",
+        "kurssinNimi": "Demokurssi-1",
         "toteutus": [
             {
                 "nimi": "ICTXCNGNG-1",
@@ -9,10 +9,10 @@
                 "toimipiste_ID": "1",
                 "suoritustapa": " ",
                 "kieli": "Suomi",
-                "lisatiedot": "Toteutus #1",
-                "taulukko" : [
-                	"mon"
-                	
+                "lisatiedot": "1",
+                "radio": "",
+                "taulukko": [
+                    "mon"
                 ]
             },
             {
@@ -21,7 +21,8 @@
                 "toimipiste_ID": "1",
                 "suoritustapa": " ",
                 "kieli": "Suomi",
-                "lisatiedot": "Toteutus #1"
+                "lisatiedot": "2",
+                "radio": ""
             },
             {
                 "nimi": "ICTXCNGNG-3",
@@ -29,78 +30,9 @@
                 "toimipiste_ID": "1",
                 "suoritustapa": " ",
                 "kieli": "Suomi",
-                "lisatiedot": "Toteutus #1"
-            }
-        ]
-    },
-{
-        "id": "2",
-        "kurssinNimi": "Kurssin Softala-2",
-        "toteutus": [
-            {
-                "nimi": "ICT7JFJSD-1",
-                "periodi": "2015 Syksy 4. periodi",
-                "toimipiste_ID": "1",
-                "suoritustapa": " ",
-                "kieli": "Suomi",
-                "lisatiedot": "Toteutus #1",
-                "taulukko" : [
-                    "mon"
-                    
-                ]
-            },
-            {
-                "nimi": "ICT7JFJSD-2",
-                "periodi": "2015 Syksy 4. periodi",
-                "toimipiste_ID": "1",
-                "suoritustapa": " ",
-                "kieli": "Suomi",
-                "lisatiedot": "Toteutus #2"
-            },
-            {
-                "nimi": "ICT7JFJSD-3",
-                "periodi": "2015 Syksy 4. periodi",
-                "toimipiste_ID": "1",
-                "suoritustapa": " ",
-                "kieli": "Suomi",
-                "lisatiedot": "Toteutus #3"
-            }
-        ]
-    },
-
-{
-        "id": "3",
-        "kurssinNimi": "Kurssin Softala-3",
-        "toteutus": [
-            {
-                "nimi": "ICJDFHBVD-1",
-                "periodi": "2015 Syksy 4. periodi",
-                "toimipiste_ID": "1",
-                "suoritustapa": " ",
-                "kieli": "Suomi",
-                "lisatiedot": "Toteutus #1",
-                "taulukko" : [
-                    "mon"
-                    
-                ]
-            },
-            {
-                "nimi": "ICKSDJVSD-2",
-                "periodi": "2015 Syksy 4. periodi",
-                "toimipiste_ID": "1",
-                "suoritustapa": " ",
-                "kieli": "Suomi",
-                "lisatiedot": "Toteutus #2"
-            },
-            {
-                "nimi": "ICKJSDNVL-3",
-                "periodi": "2015 Syksy 4. periodi",
-                "toimipiste_ID": "1",
-                "suoritustapa": " ",
-                "kieli": "Suomi",
-                "lisatiedot": "Toteutus #3"
+                "lisatiedot": "3",
+                "radio": ""
             }
         ]
     }
-
 ]

@@ -1,0 +1,51 @@
+/* Ilmoitus ikkuna*/
+.ilmo{
+
+	margin: 10px;
+	
+}
+
+.ilmo ul{
+	list-style-type: none;
+	max-width:170px;
+}
+.ilmo li{
+	border:1px solid gray;
+	height: 20px;
+}
+
+.ostoskori ul{
+	display: none;
+    margin: -21px -154px 0 95px;
+}
+.ostoskori a{
+	height:20px;
+}
+
+.ostoskori ul li {
+	display: block;
+	
+}
+
+.ostoskori li:hover ul {
+	display:inline-block;
+}
+
+.ilmo .sublista {
+	max-width: 500px;
+}
+
+
+.lukkari {
+	border: 1px solid black;
+}
+
+.lukkari td {
+	border: 1px solid black;
+	width: 70px;
+	height: 30px;
+}
+
+.toteutus {
+	background-color: green;
+}

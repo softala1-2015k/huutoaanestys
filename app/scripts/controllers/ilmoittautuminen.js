@@ -12,5 +12,8 @@ angular.module('huutoaanestysFrontApp')
     $http.get('json/toteutukset.json')
     	.success(function(data) {
     		$scope.toteutukset = data;
+    		
     	});
-  });
+    $scope.formData = {};
+
+});
