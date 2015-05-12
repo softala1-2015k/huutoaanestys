@@ -85,3 +85,57 @@ body {
     border-bottom: 0;
   }
 }
+
+.kalenteri {
+margin:auto;
+text-align:center;
+}
+
+.kalenteri .toukokuu {
+background-color:#E6E6E6;
+}
+
+.toukokuu {
+text-align:center;
+border:1px solid white;
+}
+
+.lukkari th {
+background-color:#E6E6E6;
+}
+
+.ddd{
+padding:5px;
+width:auto;
+height: auto;
+border:1px solid black;
+display:none;
+position:absolute;
+z-index:100;
+background-color:#E6E6E6;
+}
+
+.asd:hover + .ddd {
+    display: block;
+}
+
+.ddd1{
+padding:5px;
+width:auto;
+height: auto;
+border:1px solid black;
+display:none;
+position:absolute;
+z-index:100;
+background-color:#E6E6E6;
+}
+
+.asd {
+color:red;
+font-weight:bold;
+}
+
+.asd1 {
+color:red;
+font-weight:bold;
+}

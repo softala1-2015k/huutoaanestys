@@ -1,8 +1,8 @@
 	<div class="container">
 	<div class="row lukkaridiv">
-	<div class="col-sm-12" style="float:left;">
+	<div class="col-sm-12">
 	 <div class="table-responsive">
-	  <table class="table" style="height:500px;">
+	  <table class="table lukkari" style="height:500px;">
 	  <tr style="height:7%;">
 	<th>Klo</th>
 	<th>Maanantai</th>
@@ -75,15 +75,16 @@
 </div> <!--table-responsive -->
 </div> <!--col-sm-6 -->
 </div> <!--row-->
+
 <div class="row kalenteridiv">
 <div class="col-sm-12" style="float:right;">
 
 <div class="table-responsive">
 	  <table class="table kalenteri">
 	  <tr>
-	<th colspan="1"  class="toukokuu" style="border-top:1px solid black; border-left:1px solid black"><span class="glyphicon glyphicon-chevron-left"</span></th>
-	<th colspan="5"   class="toukokuu" style="border-top:1px solid black;">Toukokuu</span></th>
-	<th colspan="1"  class="toukokuu" style="border-top:1px solid black; border-right:1px solid black"><span class="glyphicon glyphicon-chevron-right"></th>
+	<th colspan="1"  class="toukokuu"><span class="glyphicon glyphicon-chevron-left"></span></th>
+	<th colspan="5"   class="toukokuu">Toukokuu</th>
+	<th colspan="1"  class="toukokuu"><span class="glyphicon glyphicon-chevron-right"></th>
 	</tr>
 	<tr>
 	<th class="viiva">Ma</th>
@@ -96,23 +97,26 @@
 	</tr>
 
 	<tr>
-	<td class="moi">27</td>
-	<td class="moi">28</td>
-	<td class="moi">29</td>
-	<td class="moi">30</td>
+	<td>27</td>
+	<td>28</td>
+	<td>29</td>
+	<td>30</td>
 	<td>1</td>
 	<td>2</td>
-	<td class="sunnuntai">3</td>
+	<td>3</td>
 	</tr>
 
 	<tr>
 	<td>4</td>
-	<td>5</td>
+	<td class="asd">5
+	<div class="ddd">
+	<p>{{ deadline[0].nimi }}<br/>{{ deadline[0].klo }}</p>
+	</div></td>
 	<td>6</td>
 	<td>7</td>
 	<td>8</td>
 	<td>9</td>
-	<td class="sunnuntai">10</td>
+	<td>10</td>
 	</tr>
 
 	<tr>
@@ -122,7 +126,7 @@
 	<td>14</td>
 	<td>15</td>
 	<td>16</td>
-	<td class="sunnuntai">17</td>
+	<td>17</td>
 	</tr>
 
 	<tr>
@@ -132,22 +136,47 @@
 	<td>21</td>
 	<td>22</td>
 	<td>23</td>
-	<td class="sunnuntai">24</td>
+	<td>24</td>
 	</tr>
 
 	<tr>
 	<td>25</td>
 	<td>26</td>
 	<td>27</td>
-	<td>28</td>
+	<td class="asd1">28
+	<div class="ddd1">
+		<p>{{ deadline[1].nimi }}<br/>{{ deadline[1].klo }}</p>
+	</div>
+	</td>
 	<td>29</td>
 	<td>30</td>
-	<td class="sunnuntai">31</td>
+	<td>31</td>
 	</tr>
 	  </table>
 </div> <!--table-responsive -->
 </div> <!--col-sm-12 -->
 </div> <!-- row -->
+
+<script>
+$(document).click (function (e) {
+    if (e.target != $('.asd')[0]) {
+        $('.ddd').hide(1000);
+    } else {
+    $('.ddd').show(1000);
+    }
+});
+</script>
+<script>
+$(document).click (function (e) {
+    if (e.target != $('.asd1')[0]) {
+        $('.ddd1').hide(1000);
+    } else {
+    $('.ddd1').show(1000);
+    }
+});
+</script>
+
+
 
 <div class="row tiedotediv">
 <div class="col-sm-12" style="float:right;">
