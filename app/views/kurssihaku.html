@@ -1,5 +1,8 @@
 <meta charset="utf-8">
 <div class="container">
+    <span>Ostoskori: </span>
+    <button ng-repeat="kurssi_tunnus in ostoskori" ng-click="poista($event)" id="{{kurssi_tunnus}}">{{kurssi_tunnus}}</button><br />
+    <button ng-click="tyhjenna()">Tyhjennä ostoskori</button>
     <h1>Kurssit</h1>
     <p>Hakusana: <input ng-model="haku"> Koutusohjelma: 
 
@@ -22,7 +25,7 @@
   			</thead>
   			<tbody>
 		        <tr ng-repeat="kurssi in kurssit | filter:haku|filter:koulutusohjelma">
-			        	<td><button type="button" class="btn btn-success btn-md" >
+			        	<td><button type="button" class="btn btn-success btn-md" id="{{kurssi.tunnus}}" ng-click="toimi($event)">
 				            {{ kurssi.tunnus }}
 				            </button></td>
 			           <td>{{ kurssi.nimi }}</td>
