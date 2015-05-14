@@ -1,8 +1,30 @@
 <meta charset="utf-8">
 <div class="container">
-    <span>Ostoskori: </span>
-    <button ng-repeat="kurssi_tunnus in ostoskori" ng-click="poista($event)" id="{{kurssi_tunnus}}">{{kurssi_tunnus}}</button><br />
-    <button ng-click="tyhjenna()">Tyhjennä ostoskori</button>
+	<div class="ostoskori">
+		<table class="table table-striped">
+		    <thead>
+	    		<tr>
+					<th>Ostoskori</th>
+	   		 	</tr>
+	  		</thead>
+		    <tbody>
+			   <tr ng-repeat="kurssi_tunnus in ostoskori">
+			   	<td><button ng-click="poista($event)" id="{{kurssi_tunnus}}" class="btn btn-warning btn-md">
+				    	<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+				    	{{kurssi_tunnus}}
+				    </button></td>
+	
+				<td>{{nimi}}</td>	
+				</tr>
+			</tbody>
+		</table>
+		<br>
+		<button ng-click="tyhjenna()" class="btn btn-danger btn-md">
+			<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+			Tyhjennä ostoskori
+		</button>
+	</div>
+	
     <h1>Kurssit</h1>
     <p>Hakusana: <input ng-model="haku"> Koutusohjelma: 
 
@@ -26,6 +48,7 @@
   			<tbody>
 		        <tr ng-repeat="kurssi in kurssit | filter:haku|filter:koulutusohjelma">
 			        	<td><button type="button" class="btn btn-success btn-md" id="{{kurssi.tunnus}}" ng-click="toimi($event)">
+			        		<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
 				            {{ kurssi.tunnus }}
 				            </button></td>
 			           <td>{{ kurssi.nimi }}</td>
