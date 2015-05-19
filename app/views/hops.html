@@ -1,6 +1,5 @@
 <div class="page-header">
 
-
    <div id="wrapper">
 
         <!-- Sidebar -->
@@ -11,7 +10,8 @@
                     <a href="#">Omat tiedot</a>
                 </li>
                 <li>
-                    <a href="#">Kurssit</a>
+                    <a href="" id="kurssit"">Kurssit</a>
+                
                 </li>
                 <ul>
               <li>
@@ -22,16 +22,23 @@
                     <a href="#">Suoritukset</a>
                 </li>
    			</ul>
+   				<li>
+                    <a href="" id="generaattori">Generaattori</a>
+               </li>
             </ul>
         </div>
         <!-- /#sidebar-wrapper -->
+        
+                 <div id="sivumenu" class="menu-icon"><span class="glyphicon glyphicon-menu-hamburger" style="font-size:1.8em;"></span></div>
+        
 
         <!-- Page Content -->
         <div id="page-content-wrapper">
+        <div class="omattiedot">
+        
         
         <div class="row">
            
-         <div id="sivumenu" class="menu-icon"><span class="glyphicon glyphicon-menu-hamburger" style="font-size:1.8em;"></span></div>
                 
          <div id="content1" class="col-xs-11"> 
          
@@ -41,7 +48,7 @@
    		   
             <h2>{{ opiskelija.opiskelijanro }}</h2>
             <p>Etunimi: {{ opiskelija.etunimi }}</p>
-            <p>Sukunimi: {{ opiskelija.sukunimi }} op</p>
+            <p>Sukunimi: {{ opiskelija.sukunimi }}</p>
             <p>Osoite: {{ opiskelija.osoite }}</p>
    
 		</div>
@@ -53,15 +60,145 @@
           </div>
          
           </div>
-           <div class="row">
-         <div id="content2" class="col-xs-11 col-sm-5 col-md-5"> <h1> Liirum</h1></div>
-         <div id="content3" class="col-xs-11 col-sm-5 col-md-5"> <h1> Laarum</h1></div>
- 
-    </div>
+          
+     </div>
+     
+     
+     <div class="kurssit">
+     
+     <div class="row">
+           
+         <div id="sivumenu" class="menu-icon"><span class="glyphicon glyphicon-menu-hamburger" style="font-size:1.8em;"></span></div>
+                
+         <div id="content1" class="col-xs-11"> 
+     
+     
+     <div>
+   		 <h1>Kurssit</h1>
+   		   
+           <h2>{{ kurssi.nimi }}</h2>
+            <p>Tunnus: {{ kurssi.tunnus }}</p>
+            <p>Laajuus: {{ kurssi.laajuus }} op</p>
+            <p>Kuvaus: {{ kurssi.kuvaus }}</p>
+   
+		</div>
+         
+         
+         
+         
+         
+          </div>
+         
+          </div>
+          
+     </div>
+     
+          <div class="ilmoittautumiset">
+     
+     <div class="row">
+           
+         <div id="sivumenu" class="menu-icon"><span class="glyphicon glyphicon-menu-hamburger" style="font-size:1.8em;"></span></div>
+                
+         <div id="content1" class="col-xs-11"> 
+     
+     
+     <div>
+   		 <h1>Ilmoittautumiset</h1>
+   		   
+           <h2>{{ kurssi.nimi }}</h2>
+            <p>Tunnus: {{ kurssi.tunnus }}</p>
+            <p>Laajuus: {{ kurssi.laajuus }} op</p>
+            <p>Kuvaus: {{ kurssi.kuvaus }}</p>
+   
+		</div>
+         
+         
+         
+         
+         
+          </div>
+         
+          </div>
+          
+     </div>
+     
+          <div class="suoritukset">
+     
+     <div class="row">
+           
+         <div id="sivumenu" class="menu-icon"><span class="glyphicon glyphicon-menu-hamburger" style="font-size:1.8em;"></span></div>
+                
+         <div id="content1" class="col-xs-11"> 
+     
+     
+     <div>
+   		 <h1>Suoritukset</h1>
+   		   
+           <h2>{{ kurssi.nimi }}</h2>
+            <p>Tunnus: {{ kurssi.tunnus }}</p>
+            <p>Laajuus: {{ kurssi.laajuus }} op</p>
+            <p>Kuvaus: {{ kurssi.kuvaus }}</p>
+   
+		</div>
+         
+         
+         
+         
+         
+          </div>
+         
+          </div>
+          
+     </div>
+     
+     <div class="generaattori">
+     
+   
+
+	<section class="generaattori col-xs-12 col-md-11" ng-controller="GeneraattoriCtrl">
+
+	<header class="generaattori--header">
+		<div class="heading flex-item ">
+			<h2 class="title">Syyslukukausi 2015</h2>
+		</div>
+		<div class="back text flex-item ">20.8.2015-25.10.2015</div>
+		<div class="forward text flex-item ">1.11.2015-22.12.2015</div>
+		<div class="back icon flex-item "><a href="#"><i class="glyphicon glyphicon-chevron-left"></i></a></div>
+		<div class="forward icon flex-item"><a href="#"><i class="glyphicon glyphicon-chevron-right"></i></a></div>
+	</header>
+
+	<accordion close-others="oneAtATime">
+		<div ng-repeat="kurssi in kurssit">
+
+			<div class="generaattori--item">
+				<div ng-class="{'col-xs-12 col-sm-6 clearfix': kurssi.kesto == '1',
+				 'col-xs-12 col-sm-12 clearfix': kurssi.kesto == '2'}">
+					<accordion-group is-open="isOpen">
+						<accordion-heading>{{ kurssi.nimi }}<i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': isOpen, 'glyphicon-chevron-right': !isOpen}"></i></accordion-heading>
+						<ul class="generaattori--item item">
+							<li class="media-item"><i class="glyphicon glyphicon-erase"></i></li>
+							<li>Tunnus: {{ kurssi.tunnus }}</li>
+							<li>Ajoitus: {{ kurssi.ajoitus }}</li>
+							<li>Ajankohta: {{ kurssi.ajankohta }}</li>
+						</ul>
+					</accordion-group>
+				</div>
+			</div>
+
+		</div>
+	</accordion>
+
+</section>
+     
+     </div>
+     
+     
+     </div> <!-- Page Content-wrapper -->
      
  	 <script src="scripts/functions.js" type="text/javascript"></script>
  	 
-    </div>
+ 	 
+    </div> <!-- Wrapper -->
     
 	</div>
 </div>
