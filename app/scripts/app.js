@@ -35,6 +35,11 @@ angular
     	templateUrl: 'views/ilmoittautuminen.html',
     	controller: 'IlmoittautuminenCtrl'
       })
+      .when('/hops/oppilastiedot', {
+    	 templateUrl: 'views/hops.html',
+    	 controller: 'OppilasCtrl'
+      })
+      
       .otherwise({
         redirectTo: '/'
       });

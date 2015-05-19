@@ -14,7 +14,6 @@ angular.module('huutoaanestysFrontApp')
 	  $http.get('http://proto317.haaga-helia.fi:8080/huutoaanestys_back/opiskelijat.json')
       .success(function(data) { //success returns a JS object
         $scope.opiskelijat = data; // bind the JS object to $scope
-  });
 	  */
 	  
 	  $http.get('json/opiskelijat.json')
